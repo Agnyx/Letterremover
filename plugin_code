@@ -1,0 +1,10 @@
+function(properties, context) {
+
+  var x = document.getElementById("Word").value;
+  var y = document.getElementById("Letter").value;
+  var x = x.toLowerCase();
+  var y = y.toLowerCase();
+  var z = x.replaceAll(y,'');
+  document.getElementById("generatedTxT").innerHTML = z;
+
+}
